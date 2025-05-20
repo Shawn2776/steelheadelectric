@@ -34,11 +34,11 @@ export default function WhyChooseUsSection() {
         <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-10 text-left">
           {reasons.map((item) => (
             <div key={item.title}>
-              <div className="text-5xl mb-4">{item.icon}</div>
-              <h3 className="text-xl font-semibold text-gray-800 mb-2">
+              <div className="text-5xl mb-4 text-center">{item.icon}</div>
+              <h3 className="text-xl font-semibold text-gray-800 mb-2 text-center">
                 {item.title}
               </h3>
-              <p className="text-gray-600 leading-relaxed">
+              <p className="text-gray-600 leading-relaxed text-center">
                 {item.description}
               </p>
             </div>
