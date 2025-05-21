@@ -4,7 +4,8 @@ import React from "react";
 const OtherHero = () => {
   return (
     <div
-      className="hero"
+      id="hero"
+      className="hero pt-18"
       style={{
         backgroundImage: "url(/bg.png)",
       }}
@@ -24,9 +25,12 @@ const OtherHero = () => {
                 expertise. From simple repairs to complex installations, we're
                 the trusted partner you need.
               </p>
-              <button className="btn bg-white text-black hover:text-white hover:bg-black transition-all duration-300 ease-in-out p-8 text-2xl font-semibold">
+              {/* <a
+                href="#services"
+                className="btn bg-white text-black hover:text-white hover:bg-black transition-all duration-300 ease-in-out py-2 text-xl font-semibold"
+              >
                 OUR SERVICES
-              </button>
+              </a> */}
             </div>
           </div>
 

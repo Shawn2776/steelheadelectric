@@ -26,7 +26,7 @@ const reasons = [
 
 export default function WhyChooseUsSection() {
   return (
-    <section className="bg-gray-100 py-20">
+    <section id="why-us" className="bg-gray-100 py-20">
       <div className="max-w-6xl mx-auto px-6 text-center">
         <h2 className="text-4xl font-bold text-gray-900 mb-12">
           Why Choose Steelhead Electric?
