@@ -33,7 +33,7 @@ const Footer = () => {
               steelheadelectric25@gmail.com
             </a>
           </p>
-          <p className="text-sm">Hours: Mon through Fri, 8 a.m. to 5 p.m.</p>
+          <p className="text-sm">Hours: Mon through Fri, 7:30 a.m. to 5 p.m.</p>
           <p className="text-sm mt-2">Mailing Address:</p>
           <p className="text-sm">319 Aviator Ave.</p>
           <p className="text-sm">Sandpoint, ID 83864</p>
