@@ -1,6 +1,6 @@
 import { FaFacebook } from "react-icons/fa";
 import { CiInstagram } from "react-icons/ci";
-import { MdEmail } from "react-icons/md";
+import { MdEmail, MdPhone } from "react-icons/md";
 import Link from "next/link";
 
 const Footer = () => {
@@ -20,9 +20,23 @@ const Footer = () => {
         {/* Contact Info */}
         <div>
           <h4 className="text-xl font-bold mb-2">Contact</h4>
-          <p className="text-sm">Phone: (208) 555-1234</p>
-          <p className="text-sm">Email: info@steelheadelectric.pro</p>
-          <p className="text-sm">Hours: Mon–Fri 8am–5pm</p>
+          <p className="text-sm flex items-center gap-2">
+            <MdPhone /> Zach Beck: <a href="tel:12087141672">(208) 714-1672</a>
+          </p>
+          <p className="text-sm flex items-center gap-2">
+            <MdPhone /> Kyle Sweeney:{" "}
+            <a href="tel:12087141649">(208) 714-1649</a>
+          </p>
+          <p className="text-sm flex items-center gap-2">
+            <MdEmail />{" "}
+            <a href="mailto:steelheadelectric25@gmail.com">
+              steelheadelectric25@gmail.com
+            </a>
+          </p>
+          <p className="text-sm">Hours: Mon through Fri, 8 a.m. to 5 p.m.</p>
+          <p className="text-sm mt-2">Mailing Address:</p>
+          <p className="text-sm">319 Aviator Ave.</p>
+          <p className="text-sm">Sandpoint, ID 83864</p>
         </div>
 
         {/* Social Links */}
@@ -36,16 +50,10 @@ const Footer = () => {
               <FaFacebook size={24} />
             </Link>
             <Link
-              href="https://www.instagram.com/steelhead_electric_7b?utm_source=ig_web_button_share_sheet&igsh=ZDNlZDc0MzIxNw=="
+              href="https://www.instagram.com/steelhead_electric_7b"
               aria-label="Instagram page"
             >
               <CiInstagram size={24} />
-            </Link>
-            <Link
-              href="mailto:info@steelheadelectric.pro"
-              aria-label="Email us"
-            >
-              <MdEmail size={24} />
             </Link>
           </div>
         </div>
