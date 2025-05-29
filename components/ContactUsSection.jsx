@@ -27,7 +27,7 @@ export default function ContactUsSection() {
       alert("Message sent!");
       setForm({ name: "", email: "", phone: "", message: "" });
     } else {
-      alert("There was an error sending your message.");
+      alert("Something went wrong. Please try again.");
     }
   };
 
@@ -100,6 +100,15 @@ export default function ContactUsSection() {
               className="w-full rounded-lg border border-gray-300 px-4 py-3 focus:outline-none focus:ring-2 focus:ring-orange-500"
             />
           </div>
+
+          <input
+            type="text"
+            name="hiddenField"
+            value={form.hiddenField || ""}
+            onChange={handleChange}
+            style={{ display: "none" }}
+            tabIndex={-1}
+          />
 
           <div className="sm:col-span-2">
             <button
