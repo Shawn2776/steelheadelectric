@@ -14,10 +14,21 @@ export default function ContactUsSection() {
     setForm({ ...form, [e.target.name]: e.target.value });
   };
 
-  const handleSubmit = (e) => {
+  const handleSubmit = async (e) => {
     e.preventDefault();
-    console.log("Form submitted:", form);
-    // TODO: send to API or service like Formspree, EmailJS, etc.
+
+    const response = await fetch("/api/contact", {
+      method: "POST",
+      headers: { "Content-Type": "application/json" },
+      body: JSON.stringify(form),
+    });
+
+    if (response.ok) {
+      alert("Message sent!");
+      setForm({ name: "", email: "", phone: "", message: "" });
+    } else {
+      alert("There was an error sending your message.");
+    }
   };
 
   return (
