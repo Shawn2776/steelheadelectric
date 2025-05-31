@@ -58,7 +58,6 @@ const Navbar = () => {
                   ? "text-orange-600 font-semibold"
                   : "text-gray-700 hover:text-primary"
               }`}
-              style={{ cursor: 'url("/bolt.png") 16 16, auto' }}
             >
               {link.name}
             </a>
@@ -66,7 +65,6 @@ const Navbar = () => {
           <a
             href="#contact"
             className="px-4 py-2 bg-orange-500 text-white rounded hover:bg-orange-600 transition font-medium text-sm"
-            style={{ cursor: 'url("/bolt.png") 16 16, auto' }}
           >
             Contact Us
           </a>
@@ -95,7 +93,6 @@ const Navbar = () => {
                     : "text-gray-700"
                 }`}
                 onClick={() => setIsOpen(false)}
-                style={{ cursor: 'url("/bolt.png") 16 16, auto' }}
               >
                 {link.name}
               </a>
@@ -104,7 +101,6 @@ const Navbar = () => {
               href="#contact"
               className="w-full text-center bg-orange-500 text-white py-3 rounded-md font-semibold shadow hover:bg-orange-600 transition"
               onClick={() => setIsOpen(false)}
-              style={{ cursor: 'url("/bolt.png") 16 16, auto' }}
             >
               Contact Us
             </a>

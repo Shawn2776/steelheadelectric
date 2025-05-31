@@ -28,15 +28,52 @@ const Footer = () => {
             <h4 className="text-xl font-bold mb-2">Contact</h4>
             <p className="text-sm flex items-center gap-2">
               <MdPhone /> Zach Beck:{" "}
-              <a href="tel:12087141672">(208) 714-1672</a>
+              <a
+                href="tel:12087141672"
+                onClick={() => {
+                  if (window.gtag) {
+                    window.gtag("event", "click", {
+                      event_category: "contact",
+                      event_label: "Phone - Zach Beck",
+                      value: 1,
+                    });
+                  }
+                }}
+              >
+                (208) 714-1672
+              </a>
             </p>
             <p className="text-sm flex items-center gap-2">
               <MdPhone /> Kyle Sweeney:{" "}
-              <a href="tel:12087141649">(208) 714-1649</a>
+              <a
+                href="tel:12087141649"
+                onClick={() => {
+                  if (window.gtag) {
+                    window.gtag("event", "click", {
+                      event_category: "contact",
+                      event_label: "Phone - Kyle Sweeney",
+                      value: 1,
+                    });
+                  }
+                }}
+              >
+                (208) 714-1649
+              </a>
             </p>
             <p className="text-sm flex items-center gap-2">
               <MdEmail />{" "}
-              <a href="mailto:steelheadelectric25@gmail.com">
+              <a
+                href="mailto:steelheadelectric25@gmail.com"
+                onClick={() => {
+                  if (window.gtag) {
+                    window.gtag("event", "click", {
+                      event_category: "contact",
+                      event_label: "Email Click",
+                      value: 1,
+                    });
+                  }
+                }}
+              >
                 steelheadelectric25@gmail.com
               </a>
             </p>

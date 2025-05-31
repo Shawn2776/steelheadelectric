@@ -125,3 +125,15 @@
 html {
   scroll-behavior: smooth;
 }
+
+a,
+button,
+[role="button"],
+[data-clickable],
+[onclick] {
+  @apply cursor-pointer;
+}
+
+a:hover {
+  color: #f97316; /* Tailwind orange-500 */
+}
