@@ -17,6 +17,18 @@ export default function ContactUsSection() {
   const handleSubmit = async (e) => {
     e.preventDefault();
 
+    try {
+      if (typeof window !== "undefined" && window.gtag) {
+        window.gtag("event", "contact_form_submit", {
+          event_category: "lead",
+          event_label: "Main Contact Form",
+          value: 1,
+        });
+      }
+    } catch (e) {
+      console.warn("Analytics event failed:", e);
+    }
+
     const response = await fetch("/api/contact", {
       method: "POST",
       headers: { "Content-Type": "application/json" },
