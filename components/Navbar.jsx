@@ -16,11 +16,7 @@ const Navbar = () => {
       const scrollPos = window.scrollY + 100;
       for (const id of sections) {
         const el = document.getElementById(id);
-        if (
-          el &&
-          el.offsetTop <= scrollPos &&
-          el.offsetTop + el.offsetHeight > scrollPos
-        ) {
+        if (el && el.offsetTop <= scrollPos && el.offsetTop + el.offsetHeight > scrollPos) {
           setActiveSection(id);
           break;
         }
@@ -55,7 +51,7 @@ const Navbar = () => {
               href={link.href}
               className={`font-medium transition ${
                 activeSection === link.href.slice(1)
-                  ? "text-orange-600 font-semibold"
+                  ? "text-[#c84246] font-semibold"
                   : "text-gray-700 hover:text-primary"
               }`}
             >
@@ -64,17 +60,14 @@ const Navbar = () => {
           ))}
           <a
             href="#contact"
-            className="px-4 py-2 bg-orange-500 text-white rounded hover:bg-orange-600 transition font-medium text-sm"
+            className="px-4 py-2 bg-[#c84246] text-white rounded hover:bg-white hover:text-[#c84246] transition font-medium text-sm"
           >
             Contact Us
           </a>
         </nav>
 
         {/* Mobile Toggle */}
-        <button
-          className="lg:hidden text-gray-800"
-          onClick={() => setIsOpen(!isOpen)}
-        >
+        <button className="lg:hidden text-gray-800" onClick={() => setIsOpen(!isOpen)}>
           {isOpen ? <X size={28} /> : <Menu size={28} />}
         </button>
       </div>
@@ -88,9 +81,7 @@ const Navbar = () => {
                 key={link.href}
                 href={link.href}
                 className={`font-medium ${
-                  activeSection === link.href.slice(1)
-                    ? "text-orange-600 font-semibold"
-                    : "text-gray-700"
+                  activeSection === link.href.slice(1) ? "text-[#c84246] font-semibold" : "text-gray-700"
                 }`}
                 onClick={() => setIsOpen(false)}
               >
@@ -99,7 +90,7 @@ const Navbar = () => {
             ))}
             <a
               href="#contact"
-              className="w-full text-center bg-orange-500 text-white py-3 rounded-md font-semibold shadow hover:bg-orange-600 transition"
+              className="w-full text-center bg-[#c84246] text-white py-3 rounded-md font-semibold shadow hover:bg-orange-600 transition"
               onClick={() => setIsOpen(false)}
             >
               Contact Us

@@ -46,13 +46,8 @@ export default function ContactUsSection() {
   return (
     <section className="bg-white py-20" id="contact">
       <div className="max-w-4xl mx-auto px-6">
-        <h2 className="text-4xl font-bold text-gray-900 text-center mb-12">
-          Contact Us
-        </h2>
-        <form
-          onSubmit={handleSubmit}
-          className="grid grid-cols-1 gap-6 sm:grid-cols-2"
-        >
+        <h2 className="text-4xl font-bold text-gray-900 text-center mb-12">Contact Us</h2>
+        <form onSubmit={handleSubmit} className="grid grid-cols-1 gap-6 sm:grid-cols-2">
           {/* Name */}
           <div className="sm:col-span-1">
             <label className="block text-sm font-medium text-gray-700 mb-1">
@@ -100,9 +95,7 @@ export default function ContactUsSection() {
 
           {/* Message (optional) */}
           <div className="sm:col-span-2">
-            <label className="block text-sm font-medium text-gray-700 mb-1">
-              Job Details / Message
-            </label>
+            <label className="block text-sm font-medium text-gray-700 mb-1">Job Details / Message</label>
             <textarea
               name="message"
               rows={5}
@@ -125,7 +118,7 @@ export default function ContactUsSection() {
           <div className="sm:col-span-2">
             <button
               type="submit"
-              className="w-full bg-orange-500 hover:bg-orange-600 text-white font-semibold py-3 px-6 rounded-lg transition-all"
+              className="w-full bg-[#c84246] hover:bg-orange-600 text-white font-semibold py-3 px-6 rounded-lg transition-all"
             >
               Send Message
             </button>
